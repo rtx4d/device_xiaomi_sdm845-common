@@ -3,6 +3,9 @@ dontaudit rild vendor_file:file ioctl;
 
 set_prop(rild, deviceid_prop)
 
+binder_call(rild, qtidataservices_app)
+
 userdebug_or_eng(`
   get_prop(rild, vendor_pd_locater_dbg_prop)
 ')
+
