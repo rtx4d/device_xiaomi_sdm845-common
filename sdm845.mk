@@ -247,6 +247,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service.xiaomi_sdm845
+
 # VR
 PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-impl \
