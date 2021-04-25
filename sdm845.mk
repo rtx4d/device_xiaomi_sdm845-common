@@ -229,6 +229,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     perf \
     telephony \
     usb \
+    vibrator \
     wfd
 
 # Radio
@@ -258,10 +259,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
 
 # VNDK
 # FIXME: master: compat for libprotobuf
