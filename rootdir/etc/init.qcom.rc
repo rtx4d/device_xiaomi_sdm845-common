@@ -635,7 +635,7 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     onrestart restart audioserver
 
 on property:vold.decrypt=trigger_restart_framework
-    restart vendor.audio-hal-2-0
+    restart vendor.audio-hal
     start vendor-sensor-sh
 
 on boot && property:persist.vendor.usb.controller.default=*
