@@ -72,7 +72,7 @@ persist.mm.enable.prefetch=true
 ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Netflix custom property
-ro.netflix.bsp_rev=Q845-05000-1
+ro.netflix.bsp_rev=Q845-14477-1
 
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
