@@ -17,6 +17,7 @@ cc_binary {
     defaults: ["hidl_defaults"],
     name: "android.hardware.light@2.0-service.xiaomi_sdm845",
     init_rc: ["android.hardware.light@2.0-service.xiaomi_sdm845.rc"],
+    overrides: ["android.hardware.lights-service.qti"],
     srcs: ["service.cpp", "Light.cpp"],
     vendor: true,
     shared_libs: [
