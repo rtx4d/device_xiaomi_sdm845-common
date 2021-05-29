@@ -14,15 +14,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Board
 TARGET_BOARD_PLATFORM := sdm845
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-system
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-system
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -198,6 +189,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Overlays
+PRODUCT_PACKAGES += \
+    SDM845Bluetooth \
+    SDM845Frameworks \
+    SDM845Settings \
+    SDM845SettingsProvider \
+    SDM845SystemUI \
+    SDM845Tethering
+
 # ParanoidDoze
 PRODUCT_PACKAGES += \
     ParanoidDoze
@@ -214,6 +214,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     display \
+    overlay \
     perf \
     telephony \
     usb \
@@ -244,10 +245,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
-# Tethering
-PRODUCT_PACKAGES += \
-    TetheringConfigOverlay
-
 # VNDK
 # FIXME: master: compat for libprotobuf
 # See https://android-review.googlesource.com/c/platform/prebuilts/vndk/v28/+/1109518
@@ -266,7 +263,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
