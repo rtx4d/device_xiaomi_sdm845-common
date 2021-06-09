@@ -221,11 +221,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     vibrator \
     wfd
 
-ifneq ($(TARGET_DEVICE), beryllium)
-TARGET_COMMON_QTI_COMPONENTS += \
-    nq-nfc
-endif
-
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_xiaomi
