@@ -610,7 +610,6 @@ vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/qti
 vendor/bin/rmt_storage
-vendor/bin/tftp_server
 vendor/bin/qrtr-cfg
 vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
@@ -753,6 +752,14 @@ vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
+
+# TFTP - LA.UM.9.8.r1-02700-SDM710.0
+vendor/bin/tftp_server
+vendor/etc/init/vendor.qti.tftp.rc
+
+# TLOC - LA.UM.9.8.r1-02700-SDM710.0
+vendor/bin/tloc_daemon
+vendor/etc/init/tloc_daemon.rc
 
 # Thermal engine
 vendor/bin/thermal-engine
