@@ -336,9 +336,11 @@ vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libpvr.so
 
-# Graphics (Adreno firmware)
+# Graphics (Adreno firmware) - LA.UM.9.8.r1-02700-SDM710.0
 vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
+
+# Graphics (Adreno firmware)
 vendor/firmware/a630_zap.b00
 vendor/firmware/a630_zap.b01
 vendor/firmware/a630_zap.b02
@@ -433,7 +435,7 @@ vendor/lib/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib/vendor.qti.imsrtpservice@3.0.so
 vendor/lib/vendor.qti.imsrtpservice@3.0-service-Impl.so
 
-# IPA firmware
+# IPA firmware - LA.UM.9.8.r1-02700-SDM710.0
 vendor/etc/init/ipa_fws.rc
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
