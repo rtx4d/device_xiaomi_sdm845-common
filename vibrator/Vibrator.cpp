@@ -61,48 +61,33 @@ static const char LED_DEVICE[] = "/sys/class/leds/vibrator";
 
 static std::map<Effect, std::vector<std::pair<std::string, std::string>>> LED_EFFECTS{
     { Effect::CLICK, {
-        { "/sys/class/leds/vibrator/ignore_store", "0" },
-        { "/sys/class/leds/vibrator/duration", "10" },
-        { "/sys/class/leds/vibrator/vmax", "0x1f" },
-        { "/sys/class/leds/vibrator/gain", "0x80" },
-        { "/sys/class/leds/vibrator/seq", "0x00 0x03" },
-        { "/sys/class/leds/vibrator/loop", "0x00 0x00" },
+        { "/sys/class/leds/vibrator/state", "1" },
+        { "/sys/class/leds/vibrator/duration", "15" },
         { "/sys/class/leds/vibrator/brightness", "1" },
+        { "/sys/class/leds/vibrator/activate", "1" },		
     }},
     { Effect::DOUBLE_CLICK, {
-        { "/sys/class/leds/vibrator/ignore_store", "0" },
+        { "/sys/class/leds/vibrator/state", "1" },
         { "/sys/class/leds/vibrator/duration", "30" },
-        { "/sys/class/leds/vibrator/vmax", "0x1f" },
-        { "/sys/class/leds/vibrator/gain", "0x80" },
-        { "/sys/class/leds/vibrator/seq", "0x00 0x03" },
-        { "/sys/class/leds/vibrator/loop", "0x00 0x00" },
         { "/sys/class/leds/vibrator/brightness", "1" },
+        { "/sys/class/leds/vibrator/activate", "1" },				
         { "SLEEP", "150" },
-        { "/sys/class/leds/vibrator/ignore_store", "0" },
+        { "/sys/class/leds/vibrator/state", "1" },
         { "/sys/class/leds/vibrator/duration", "30" },
-        { "/sys/class/leds/vibrator/vmax", "0x1f" },
-        { "/sys/class/leds/vibrator/gain", "0x80" },
-        { "/sys/class/leds/vibrator/seq", "0x00 0x03" },
-        { "/sys/class/leds/vibrator/loop", "0x00 0x00" },
         { "/sys/class/leds/vibrator/brightness", "1" },
+        { "/sys/class/leds/vibrator/activate", "1" },				
     }},
     { Effect::TICK, {
-        { "/sys/class/leds/vibrator/ignore_store", "0" },
-        { "/sys/class/leds/vibrator/duration", "30" },
-        { "/sys/class/leds/vibrator/vmax", "0x1f" },
-        { "/sys/class/leds/vibrator/gain", "0x80" },
-        { "/sys/class/leds/vibrator/seq", "0x00 0x03" },
-        { "/sys/class/leds/vibrator/loop", "0x00 0x00" },
+        { "/sys/class/leds/vibrator/state", "1" },
+        { "/sys/class/leds/vibrator/duration", "10" },
         { "/sys/class/leds/vibrator/brightness", "1" },
+        { "/sys/class/leds/vibrator/activate", "1" },		
     }},
     { Effect::HEAVY_CLICK, {
-        { "/sys/class/leds/vibrator/ignore_store", "0" },
-        { "/sys/class/leds/vibrator/duration", "10" },
-        { "/sys/class/leds/vibrator/vmax", "0x1f" },
-        { "/sys/class/leds/vibrator/gain", "0x80" },
-        { "/sys/class/leds/vibrator/seq", "0x00 0x03" },
-        { "/sys/class/leds/vibrator/loop", "0x00 0x00" },
+        { "/sys/class/leds/vibrator/state", "1" },
+        { "/sys/class/leds/vibrator/duration", "20" },
         { "/sys/class/leds/vibrator/brightness", "1" },
+        { "/sys/class/leds/vibrator/activate", "1" },		
     }}
 };
 
@@ -499,10 +484,6 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength es, const std
                 }
             }
 
-            // Restore gain from persist prop
-            char gain[PROPERTY_VALUE_MAX]{};
-            property_get("persist.vendor.vib.gain", gain, "0x55");
-            ledVib.write_value("/sys/class/leds/vibrator/gain", gain);
 
             // Return magic value for play length so that we won't end up calling on() / off()
             playLengthMs = 150;
