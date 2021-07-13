@@ -173,4 +173,8 @@
 
     <!--  Vibration intensity control -->
     <bool name="config_vibration_supports_multiple_intensities">true</bool>
+    
+    <!-- Whether or not wcg (wide color gamut) should be enabled on this device,
+    we only enabled it while the device has ability of mixed color spaces composition -->
+    <bool name="config_enableWcgMode">true</bool>
 </resources>
