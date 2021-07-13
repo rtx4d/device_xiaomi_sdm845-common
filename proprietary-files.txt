@@ -191,7 +191,7 @@ vendor/lib/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib/vendor.qti.latency@2.0.so
 
-# Configstore - LA.UM.9.8.r1-02700-SDM710.0
+# Configstore - from OnePlus6 - RKQ1.201217.002/2106301530
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
@@ -472,7 +472,7 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
-# Media codecs - LA.UM.9.8.r1-02700-SDM710.0
+# Media codecs - OnePlus6 - RKQ1.201217.002/2106301530
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libFlacSwDec.so
@@ -770,7 +770,7 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 
-# VPP - from LA.UM.9.8.r1-02700-SDM710.0
+# VPP - from OnePlus6 - RKQ1.201217.002/2106301530
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vppservice.rc
