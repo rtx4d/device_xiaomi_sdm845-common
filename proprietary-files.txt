@@ -78,21 +78,31 @@ vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libdirac.so
 vendor/lib/soundfx/libshoebox.so
 
-# Bluetooth (A2DP)
+# Bluetooth (A2DP) - from OnePlus6 - RKQ1.201217.002/2106301530
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/libbluetooth_audio_session_qti.so
+vendor/lib64/libbluetooth_audio_session_qti_2_1.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
+vendor/lib64/libbt-hidlclient.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/libbluetooth_audio_session_qti.so
+vendor/lib/libbluetooth_audio_session_qti_2_1.so
+vendor/lib/libbt-hidlclient.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 
 # CDSP
 vendor/bin/cdsprpcd
