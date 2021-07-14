@@ -748,10 +748,15 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
-# Thermal engine
+# Thermal engine - from OnePlus6 - RKQ1.201217.002/2106301530
+vendor/bin/hw/vendor.qti.hardware.limits@1.0-service
 vendor/bin/thermal-engine
-vendor/lib64/libthermalclient.so
-vendor/lib/libthermalclient.so
+vendor/etc/init/init_thermal-engine.rc
+vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc
+-vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
+vendor/lib64/vendor.qti.hardware.limits@1.0.s
 
 # Time services - from OnePlus6 - RKQ1.201217.002/2106301530
 -vendor/app/TimeService/TimeService.apk
