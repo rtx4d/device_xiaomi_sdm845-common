@@ -283,15 +283,15 @@ vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libpvr.so
 
-# Graphics (Adreno firmware) - LA.UM.9.8.r1-02700-SDM710.0
+# Graphics (Adreno firmware) - from OnePlus6 - RKQ1.201217.002/2106301530
 vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
-
-# Graphics (Adreno firmware)
 vendor/firmware/a630_zap.b00
 vendor/firmware/a630_zap.b01
 vendor/firmware/a630_zap.b02
 vendor/firmware/a630_zap.elf
+
+# Graphics (Adreno firmware)
 vendor/firmware/a630_zap.mdt
 
 # Graphics (Vulkan) - from OnePlus6 - RKQ1.201217.002/2106301530
