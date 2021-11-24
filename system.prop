@@ -33,7 +33,7 @@ ro.vendor.display.sensortype=2
 # Graphics
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
-persist.sys.sf.disable_blurs=1
+ro.surface_flinger.supports_background_blur=0
 
 # IMS
 persist.vendor.ims.disableUserAgent=0
