@@ -211,8 +211,10 @@ TARGET_COMMON_QTI_COMPONENTS += \
     bt \
     display \
     overlay \
+    perf \
     telephony \
-    usb
+    usb \
+    wfd
 
 # Recovery
 PRODUCT_PACKAGES += \
