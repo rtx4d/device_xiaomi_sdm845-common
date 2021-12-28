@@ -239,7 +239,7 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# FASTCV - from LA.UM.9.8.r1-02700-SDM710.0
+# FASTCV - from OnePlus6 - RKQ1.201217.002/2106301530
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/libfastcvdsp_stub.so
@@ -309,7 +309,7 @@ vendor/lib/hw/vulkan.adreno.so
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# IMS - from OnePlus6 - RKQ1.201217.002/2106301530
+# IMS - from LA.UM.9.8.r1-02700-SDM710.0
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
