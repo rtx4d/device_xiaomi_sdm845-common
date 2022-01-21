@@ -116,7 +116,7 @@ vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
-# CNE - from alioth - 12/SKQ1.211006.001/21.12.1
+# CNE - from OnePlus6 - RKQ1.201217.002/2106301530
 -vendor/app/CneApp/CneApp.apk
 -vendor/app/IWlanService/IWlanService.apk
 vendor/bin/cnd
@@ -162,6 +162,7 @@ vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
 vendor/lib64/vendor.qti.data.factory@2.2.so
+vendor/lib64/vendor.qti.data.mwqem@1.0.so
 vendor/lib64/vendor.qti.data.slm@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
@@ -172,6 +173,7 @@ vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
+vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
@@ -286,7 +288,7 @@ vendor/lib/hw/vulkan.adreno.so
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# IMS - from alioth - 12/SKQ1.211006.001/21.12.1
+# IMS - LA.UM.9.8.r1-02700-SDM710.0
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
@@ -327,6 +329,7 @@ vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so
 vendor/lib64/vendor.qti.ims.callcapability@1.0.so
 vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 vendor/lib64/vendor.qti.ims.factory@1.0.so
+vendor/lib64/vendor.qti.ims.factory@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
@@ -448,7 +451,7 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# QMI - from alioth - 12/SKQ1.211006.001/21.12.1
+# QMI - LA.UM.9.8.r1-02700-SDM710.0
 vendor/bin/irsc_util
 vendor/etc/sec_config
 vendor/lib64/libdiag.so
@@ -484,7 +487,7 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
-# RIL - from alioth - 12/SKQ1.211006.001/21.12.1
+# RIL - LA.UM.9.8.r1-02700-SDM710.0
 vendor/bin/adpl
 vendor/bin/netmgrd
 vendor/bin/pd-mapper
@@ -505,10 +508,8 @@ vendor/etc/init/netmgrd.rc
 vendor/etc/init/port-bridge.rc
 vendor/etc/init/qcrild.rc
 vendor/lib64/libconfigdb.so
-vendor/lib64/libhydra_common.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
-vendor/lib64/libmodemapi.so
 vendor/lib64/libnetmgr.so
 vendor/lib64/libnetmgr_common.so
 vendor/lib64/libnetmgr_nr_fusion.so
