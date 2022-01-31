@@ -620,7 +620,7 @@ vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 
-# SMC Invoke - from OnePlus6 - RKQ1.201217.002/2106301530
+# SMC Invoke - LA.UM.9.3.r1-02700-sdm845.0
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libqcbor.so
 
