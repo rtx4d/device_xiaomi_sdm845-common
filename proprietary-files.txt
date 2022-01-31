@@ -611,7 +611,7 @@ vendor/lib64/libspl.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libtzdrmgenprov.so
 
-# Snapdragon Computer Vision Engine (SCVE) - from OnePlus6 - RKQ1.201217.002/2106301530
+# Snapdragon Computer Vision Engine (SCVE) - LA.UM.9.3.r1-02700-sdm845.0
 vendor/lib64/libscveCommon.so
 vendor/lib64/libscveCommon_stub.so
 vendor/lib64/libscveObjectSegmentation.so
