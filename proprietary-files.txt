@@ -192,13 +192,15 @@ vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
-# Display postprocessing - from OnePlus6 - RKQ1.201217.002/2106301530
+# Display postprocessing - LA.UM.9.3.r1-02700-sdm845.0
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/mm-pp-dpps
-vendor/bin/ppd
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplayqos.so
+
+# Display postprocessing - from OnePlus6 - RKQ1.201217.002/2106301530
+vendor/bin/ppd
 vendor/lib64/libtinyxml.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
