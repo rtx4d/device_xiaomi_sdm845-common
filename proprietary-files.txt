@@ -210,7 +210,7 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# DPM - from OnePlus6 - RKQ1.201217.002/2106301530
+# DPM - LA.UM.9.3.r1-02700-sdm845.0
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
