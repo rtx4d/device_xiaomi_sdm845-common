@@ -229,7 +229,7 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# Graphics (Adreno)- from OnePlus6 - RKQ1.201217.002/2106301530
+# Graphics (Adreno)- LA.UM.9.3.r1-02700-sdm845.0
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
@@ -265,7 +265,7 @@ vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libpvr.so
 
-# Graphics (Adreno firmware) - from OnePlus6 - RKQ1.201217.002/2106301530
+# Graphics (Adreno firmware) - LA.UM.9.3.r1-02700-sdm845.0
 vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
 vendor/firmware/a630_zap.b00
@@ -276,7 +276,7 @@ vendor/firmware/a630_zap.elf
 # Graphics (Adreno firmware)
 vendor/firmware/a630_zap.mdt
 
-# Graphics (Vulkan) - from OnePlus6 - RKQ1.201217.002/2106301530
+# Graphics (Vulkan) - LA.UM.9.3.r1-02700-sdm845.0
 vendor/lib64/hw/vulkan.adreno.so
 vendor/lib/hw/vulkan.adreno.so
 
