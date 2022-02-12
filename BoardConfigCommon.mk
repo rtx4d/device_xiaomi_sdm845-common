@@ -71,10 +71,7 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 
 # FOD
 ifneq ($(filter equuleus ursa,$(TARGET_DEVICE)),)
-TARGET_SURFACEFLINGER_FOD_LIB := //$(COMMON_PATH):libfod_extension.xiaomi_sdm845
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(COMMON_PATH)/fod/vendor_aospa_fod_framework_compatibility_matrix.xml
+TARGET_SURFACEFLINGER_UDFPS_LIB  := //$(COMMON_PATH):libudfps_extension.xiaomi_sdm845
 endif
 
 # HIDL
