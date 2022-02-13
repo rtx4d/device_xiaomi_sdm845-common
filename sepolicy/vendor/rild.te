@@ -7,5 +7,6 @@ binder_call(rild, qtidataservices_app)
 
 userdebug_or_eng(`
   get_prop(rild, vendor_pd_locater_dbg_prop)
+  allow rild diag_device:chr_file rw_file_perms;
 ')
-
+dontaudit rild diag_device:chr_file rw_file_perms;
