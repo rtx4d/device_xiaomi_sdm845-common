@@ -29,7 +29,6 @@ ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
 ro.vendor.display.sensortype=2
 
 # Graphics
-debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 ro.surface_flinger.supports_background_blur=0
 
