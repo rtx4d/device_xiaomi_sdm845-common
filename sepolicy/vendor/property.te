@@ -15,3 +15,5 @@ vendor_public_prop(vendor_slm_prop);
 vendor_public_prop(vendor_wifi_version);
 
 vendor_public_prop(persist_slider_prop);
+
+vendor_restricted_prop(vendor_mwqem_prop);
