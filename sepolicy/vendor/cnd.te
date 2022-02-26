@@ -1,6 +1,8 @@
 add_hwservice(cnd, hal_slmadapter_hwservice)
-
 get_prop(cnd, vendor_slm_prop)
+
+add_hwservice(cnd, hal_mwqemadapter_hwservice)
+get_prop(cnd, vendor_mwqem_prop)
 
 userdebug_or_eng(`
   allow cnd diag_device:chr_file rw_file_perms;
