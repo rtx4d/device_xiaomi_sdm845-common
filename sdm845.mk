@@ -78,7 +78,8 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libtinycompress \
     libvolumelistener \
-    tinymix
+    tinymix \
+    sound_trigger.primary.sdm845
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
