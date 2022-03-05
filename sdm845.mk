@@ -106,7 +106,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.sensors.sh \
-    init.recovery.qcom.rc \
     init.xiaomi.rc \
     ueventd.xiaomi.rc
 
