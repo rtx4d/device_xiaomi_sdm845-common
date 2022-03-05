@@ -104,14 +104,11 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.rc \
     init.qcom.power.rc \
     init.qcom.sensors.sh \
-    init.qcom.sh \
     init.recovery.qcom.rc \
-    ueventd.qcom.rc
+    init.xiaomi.rc \
+    ueventd.xiaomi.rc
 
 # Context Hub
 PRODUCT_PACKAGES += \
@@ -214,6 +211,7 @@ TARGET_COMMON_QTI_COMPONENTS += \
     av \
     bt \
     display \
+    init \
     overlay \
     perf \
     telephony \
