@@ -455,6 +455,21 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
+# QCC VND HAL - LA.UM.9.3.r1-02700-sdm845.0
+vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
+vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+
+# QDMA - LA.UM.9.8.r1-02700-SDM710.0
+-vendor/app/QCC-TR-UI/QCC-TR-UI.apk
+
+# QDMA - LA.UM.9.3.r1-02700-sdm845.0
+vendor/bin/qcc-trd
+vendor/etc/init/init.qdmastats.rc
+vendor/lib64/libqdma_file_agent.so
+
 # QMI - LA.UM.9.8.r1-02700-SDM710.0
 vendor/bin/irsc_util
 vendor/etc/sec_config
@@ -501,7 +516,6 @@ vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
 vendor/bin/qti
 vendor/bin/rmt_storage
-vendor/bin/tftp_server
 vendor/bin/hw/qcrild
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
@@ -645,6 +659,10 @@ vendor/lib/libthermalclient.so
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
+
+# TFTP
+vendor/bin/tftp_server
+vendor/etc/init/vendor.qti.tftp.rc
 
 # Trusted Execution Environment connector (QTEE) - LA.UM.9.3.r1-02700-sdm845.0
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
