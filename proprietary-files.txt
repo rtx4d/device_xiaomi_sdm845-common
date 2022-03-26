@@ -234,6 +234,14 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
+# Graphics (Adreno) - from LAHAINA 18900 | QSSI 05800 - patched for use mapper shims
+vendor/lib/egl/eglSubDriverAndroid.so
+vendor/lib/hw/vulkan.adreno.so
+vendor/lib/libCB.so
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/hw/vulkan.adreno.so
+vendor/lib64/libCB.so
+
 # Graphics (Adreno firmware) - LA.UM.9.3.r1-02700-sdm845.0
 vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
