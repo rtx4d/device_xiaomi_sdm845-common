@@ -247,6 +247,12 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
+# Qtimapper Shim
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.mappershim \
+    vendor.qti.hardware.display.mapperextensionsshim \
+    android.hardware.graphics.mappershim
+
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.xiaomi_sdm845
