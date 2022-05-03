@@ -436,6 +436,7 @@ vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 # QDMA - LA.UM.9.3.r1-02700-sdm845.0
 vendor/bin/qcc-trd
 vendor/etc/init/init.qdmastats.rc
+vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqdma_file_agent.so
 
 # QMI - LA.UM.9.8.r1-02700-SDM710.0
