@@ -1,4 +1,0 @@
-allow wcnss_service wifi_vendor_wpa_socket:dir { write add_name remove_name search };
-allow wcnss_service wifi_vendor_wpa_socket:sock_file { create unlink };
-allow wcnss_service wifi_vendor_wpa_socket:chr_file write;
-allow wcnss_service kmsg_device:chr_file { write open };
