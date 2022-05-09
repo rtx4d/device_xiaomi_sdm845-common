@@ -89,6 +89,14 @@ struct BiometricsFingerprint : public IBiometricsFingerprint, public IXiaomiFing
     Return<bool> isUdfps(uint32_t sensorId) override;
     Return<void> onFingerDown(uint32_t x, uint32_t y, float minor, float major) override;
     Return<void> onFingerUp() override;
+
+    // Check does device have UDFPS or not
+    static bool mHaveUdfps;
+
+    // Methods to get fingerprint HAL device
+private:
+    static fingerprint_device_t* getDeviceForVendor(const char* class_name);
+    static fingerprint_device_t* getFingerprintDevice();
 };
 
 }  // namespace implementation
