@@ -282,6 +282,10 @@ PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-impl \
     android.hardware.vr@1.0-service
 
+# WFD
+PRODUCT_PACKAGES += \
+    libwfdaac_vendor
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
