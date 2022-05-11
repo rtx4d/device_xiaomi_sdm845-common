@@ -65,10 +65,6 @@ TARGET_ENABLE_MEDIADRM_64 := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
-# Graphics
-MAX_EGL_CACHE_KEY_SIZE := 12*1024
-MAX_EGL_CACHE_SIZE := 2048*1024
-
 # FOD
 ifneq ($(filter equuleus ursa,$(TARGET_DEVICE)),)
 TARGET_SURFACEFLINGER_UDFPS_LIB  := //$(COMMON_PATH):libudfps_extension.xiaomi_sdm845
