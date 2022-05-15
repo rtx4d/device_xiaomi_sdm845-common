@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
- * Copyright (C) 2018-2020 The LineageOS Project
+ * Copyright (C) 2018-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -425,10 +425,6 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
     }
 }
 
-Return<int32_t> BiometricsFingerprint::extCmd(int32_t cmd, int32_t param) {
-    return mDevice->extCmd(mDevice, cmd, param);
-}
-
 Return<bool> BiometricsFingerprint::isUdfps(uint32_t /* sensorId */) {
     return mHaveUdfps;
 }
@@ -437,7 +433,7 @@ Return<void> BiometricsFingerprint::onFingerDown(uint32_t /* x */, uint32_t /* y
                                                 float /* minor */, float /* major */) {
     if (mHaveUdfps) {
         set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
-        extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
+        mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_630_FOD);
         set(FOD_STATUS_PATH, FOD_STATUS_ON);
     }
     return Void();
@@ -446,7 +442,7 @@ Return<void> BiometricsFingerprint::onFingerDown(uint32_t /* x */, uint32_t /* y
 Return<void> BiometricsFingerprint::onFingerUp() {
     if (mHaveUdfps) {
         set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
-        extCmd(COMMAND_NIT, PARAM_NIT_NONE);
+        mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
         set(FOD_STATUS_PATH, FOD_STATUS_OFF);
     }
     return Void();
