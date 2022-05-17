@@ -5,3 +5,14 @@ dontaudit init { bt_firmware_file firmware_file }:filesystem getattr;
 allow init socket_device:sock_file { unlink setattr create };
 
 allow init iorapd_data_file:file getattr;
+
+allow init hidl_base_hwservice:hwservice_manager add;
+allow init hwservicemanager:binder { call transfer };
+allow init mediaserver:binder transfer;
+allow init mediaswcodec:binder transfer;
+allow init nfc:binder transfer;
+allow init platform_app:binder transfer;
+allow init same_process_hal_file:file execute;
+allow init self:socket create;
+allow init system_server:binder transfer;
+allow init vendor_file:file execute;
