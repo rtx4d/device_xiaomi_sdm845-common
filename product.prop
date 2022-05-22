@@ -17,6 +17,9 @@ ro.lmk.kill_timeout_ms=100
 ro.lmk.use_minfree_levels=true
 ro.lmk.log_stats=true
 
+# Media
+debug.stagefright.omx_default_rank=0
+
 # SurfaceFlinger
 debug.sf.early_phase_offset_ns=500000
 debug.sf.early_app_phase_offset_ns=500000
