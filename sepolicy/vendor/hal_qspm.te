@@ -1,0 +1,6 @@
+# Define Domain for QSPM HAL
+type hal_qspm, domain;
+type hal_qspm_exec, exec_type, vendor_file_type, file_type;
+
+# Started by init
+init_daemon_domain(hal_pasrmanager_memory_qti)
