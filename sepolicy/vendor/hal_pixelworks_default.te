@@ -1,0 +1,16 @@
+type hal_pixelworks_default, domain;
+type hal_pixelworks_default_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hal_pixelworks_default)
+
+hal_attribute(pixelworks)
+hal_server_domain(hal_pixelworks_default, hal_pixelworks)
+
+binder_call(hal_pixelworks_client, hal_pixelworks_server)
+binder_call(hal_pixelworks_server, hal_pixelworks_client)
+
+hal_attribute_hwservice(hal_pixelworks, hal_pixelworks_hwservice)
+
+allow hal_pixelworks_default iris2p_device:chr_file rw_file_perms;
+
+set_prop(hal_pixelworks_default, iris_prop)

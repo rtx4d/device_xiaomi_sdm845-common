@@ -1,0 +1,14 @@
+type iris_panel_calibration, domain;
+type iris_panel_calibration_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(iris_panel_calibration)
+
+allow iris_panel_calibration sysfs_iris:file rw_file_perms;
+allow iris_panel_calibration sysfs_iris:dir search;
+
+allow iris_panel_calibration block_device:dir search;
+
+allow iris_panel_calibration display_vendor_data_file:dir ra_dir_perms;
+allow iris_panel_calibration display_vendor_data_file:file { rw_file_perms create_file_perms };
+
+allow iris_panel_calibration iris2p_device:chr_file rw_file_perms;
