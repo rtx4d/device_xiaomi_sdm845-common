@@ -1,0 +1,6 @@
+genfscon sysfs /sys/rgb/leds/red_1/brightness                                  u:object_r:sysfs_rgb:s0
+genfscon sysfs /sys/rgb/leds/green_1/brightness                                u:object_r:sysfs_rgb:s0
+genfscon sysfs /sys/rgb/leds/blue_1/brightness                                 u:object_r:sysfs_rgb:s0
+genfscon sysfs /sys/rgb/leds/red_1/blink                                       u:object_r:sysfs_rgb:s0
+genfscon sysfs /sys/rgb/leds/green_1/blink                                     u:object_r:sysfs_rgb:s0
+genfscon sysfs /sys/rgb/leds/blue_1/blink                                      u:object_r:sysfs_rgb:s0
