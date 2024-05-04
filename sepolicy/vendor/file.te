@@ -17,6 +17,7 @@ type sysfs_rpm, sysfs_type, fs_type;
 type sysfs_system_sleep_stats, sysfs_type, fs_type;
 type sysfs_wireless_supply, sysfs_type, fs_type;
 type sysfs_parallel_supply, sysfs_type, fs_type;
+type sysfs_audio_params, sysfs_type, fs_type;
 
 type persist_audio_file, file_type, vendor_persist_type;
 type persist_camera_file, file_type, vendor_persist_type;

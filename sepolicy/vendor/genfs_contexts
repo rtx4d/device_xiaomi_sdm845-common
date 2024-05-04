@@ -28,5 +28,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,l3-cpu4                          u
 genfscon sysfs /devices/platform/soc/soc:qcom,llccbw                           u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,mincpubw                         u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/virtual/misc/iris2p                                    u:object_r:sysfs_iris:s0
+genfscon sysfs /module/snd_soc_sdm845/parameters/smartpa_type                  u:object_r:sysfs_audio_params:s0
 genfscon sysfs /power/rpmh_stats/master_stats                                  u:object_r:sysfs_rpm:s0
 genfscon sysfs /power/system_sleep/stats                                       u:object_r:sysfs_system_sleep_stats:s0
