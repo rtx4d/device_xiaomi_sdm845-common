@@ -7,6 +7,9 @@ allow hal_audio_default audio_socket:sock_file rw_file_perms;
 
 dontaudit hal_audio_default sysfs:dir read;
 
+# For shark speaker tweaks
+set_prop(hal_audio_default, mi_speaker_prop)
+
 # For shark speaker calibration
 allow hal_audio_default sysfs_audio_params:dir r_dir_perms;
 allow hal_audio_default sysfs_audio_params:file r_file_perms;
